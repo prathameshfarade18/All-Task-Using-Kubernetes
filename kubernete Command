@@ -1,0 +1,15 @@
+kubectl get nodes          #This command lists all the nodes in your Kubernetes cluster
+
+kubectl get pods           #This command retrieves the list of all pods running in the cluster
+
+kubectl get pod            #show the status of all pods 
+
+kubectl get po             #This is simply a shorthand for kubectl get pods
+
+kubectl get po -o wide     #This command provides a more detailed or “wide” view of the pods
+
+kubectl describe pod nginxpod            #This command shows detailed information about a specific pod
+
+kubectl logs nginxpod                    #This command retrieves the logs for the containers running within the nginxpod
+
+kubectl exec -it nginxpod -- /bin/bash   #This command opens an interactive terminal session (-it) inside the specified pod and execute inside
