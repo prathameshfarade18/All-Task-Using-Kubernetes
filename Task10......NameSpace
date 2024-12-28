@@ -1,0 +1,21 @@
+apiVersion: v1
+kind: Namespace
+metadata:
+   name: mynamespace
+
+
+kubectl get namespaces   #This command lists all namespaces 
+
+kubectl create namespace namespace-name   #This command is used to create a new namespace
+
+kubectl delete namespace namespace-name   #This command deletes the specified namespace 
+
+kubectl config set-context --current --namespace=namespace-name   #This command sets the default namespace for the current context
+
+kubectl get pods -n namespace-name   #This command lists all the pods in the namespace-name namespace.
+
+kubectl describe namespace namespace-name   #This command provides detailed information
+
+kubectl get all -n namespace-name    #his command lists all the resources (pods, services, deployments) in the specified namespace.
+
+kubectl logs pod-name -n namespace-name   #This command fetches logs from the specified pod within a particular namespace.
